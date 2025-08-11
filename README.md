@@ -70,7 +70,7 @@ data-warehouse-project/
 
 ├── tests/                              # Scripts de pruebas de calidad de datos
 
-├── README.md                           # Este archivo (introducción del proyecto)
+├── README.md                           # Introducción del proyecto
 ├── LICENSE                             # Licencia MIT
 ├── .gitignore                          # Exclusión de archivos no versionados
 └── requirements.txt                    # Requisitos del entorno
