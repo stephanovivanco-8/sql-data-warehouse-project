@@ -1,4 +1,4 @@
-# sql-data-warehouse-project
+# SQL-data-warehouse-project
 Construcción de un DWH moderno con SQL Server, incluyendo procesos ETL, modelado y análisis de datos
 
 📊 Proyecto de Almacén de Datos y Analítica de Stephano Vivanco
