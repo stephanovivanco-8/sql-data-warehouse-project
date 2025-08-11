@@ -52,9 +52,9 @@ Notion (para la gestión del proyecto y documentación)
 📦 Estructura del Repositorio
 
 data-warehouse-project/
-│
+
 ├── datasets/                           # Datasets en crudo (ERP y CRM en formato CSV)
-│
+
 ├── docs/                               # Diagramas y documentación del proyecto
 │   ├── etl.drawio                      # Técnicas y métodos ETL
 │   ├── data_architecture.drawio        # Arquitectura general del proyecto
@@ -62,14 +62,14 @@ data-warehouse-project/
 │   ├── data_flow.drawio                # Diagrama de flujo de datos
 │   ├── data_models.drawio              # Esquema estrella para reporting
 │   ├── naming-conventions.md           # Guía de nomenclatura estándar
-│
+
 ├── scripts/
 │   ├── bronze/                         # Scripts para la capa Bronce (carga inicial)
 │   ├── silver/                         # Scripts de limpieza y transformación
 │   ├── gold/                           # Scripts de modelado analítico
-│
+
 ├── tests/                              # Scripts de pruebas de calidad de datos
-│
+
 ├── README.md                           # Este archivo (introducción del proyecto)
 ├── LICENSE                             # Licencia MIT
 ├── .gitignore                          # Exclusión de archivos no versionados
