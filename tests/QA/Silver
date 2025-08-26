@@ -1,27 +1,28 @@
 /*
 ===============================================================================
-Quality Checks
+Controles de Calidad
 ===============================================================================
-Script Purpose:
-    This script performs various quality checks for data consistency, accuracy, 
-    and standardization across the 'silver' layer. It includes checks for:
-    - Null or duplicate primary keys.
-    - Unwanted spaces in string fields.
-    - Data standardization and consistency.
-    - Invalid date ranges and orders.
-    - Data consistency between related fields.
+Propósito del Script:
+    Este script realiza varios controles de calidad para verificar la consistencia, 
+    exactitud y estandarización de los datos en la capa 'silver'. Incluye controles de:
+    - Claves primarias nulas o duplicadas.
+    - Espacios no deseados en campos de texto.
+    - Estandarización y consistencia de los datos.
+    - Rangos y órdenes de fechas inválidos.
+    - Consistencia de datos entre campos relacionados.
 
-Usage Notes:
-    - Run these checks after data loading Silver Layer.
-    - Investigate and resolve any discrepancies found during the checks.
+Notas de Uso:
+    - Ejecutar estos controles después de cargar la Capa Silver.
+    - Investigar y resolver cualquier discrepancia encontrada durante los controles.
 ===============================================================================
 */
 
 -- ====================================================================
--- Checking 'silver.crm_cust_info'
+-- Verificando 'silver.crm_cust_info'
 -- ====================================================================
--- Check for NULLs or Duplicates in Primary Key
--- Expectation: No Results
+-- Comprobar NULLs o duplicados en la clave primaria
+-- Expectativa: No se esperan resultados
+
 SELECT 
     cst_id,
     COUNT(*) 
