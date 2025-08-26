@@ -1,24 +1,25 @@
 /*
 ===============================================================================
-Quality Checks
+Controles de Calidad
 ===============================================================================
-Script Purpose:
-    This script performs quality checks to validate the integrity, consistency, 
-    and accuracy of the Gold Layer. These checks ensure:
-    - Uniqueness of surrogate keys in dimension tables.
-    - Referential integrity between fact and dimension tables.
-    - Validation of relationships in the data model for analytical purposes.
+Propósito del Script:
+    Este script realiza controles de calidad para validar la integridad, consistencia
+    y exactitud de la Capa Gold. Estos controles aseguran:
+    - Unicidad de las claves sustitutas (surrogate keys) en las tablas de dimensiones.
+    - Integridad referencial entre las tablas de hechos y de dimensiones.
+    - Validación de las relaciones en el modelo de datos con fines analíticos.
 
-Usage Notes:
-    - Investigate and resolve any discrepancies found during the checks.
+Notas de Uso:
+    - Investigar y resolver cualquier discrepancia encontrada durante los controles.
 ===============================================================================
 */
 
 -- ====================================================================
--- Checking 'gold.dim_customers'
+-- Verificando 'gold.dim_customers'
 -- ====================================================================
--- Check for Uniqueness of Customer Key in gold.dim_customers
--- Expectation: No results 
+-- Comprobar la Unicidad de la Clave de Cliente en gold.dim_customers
+-- Expectativa: No se esperan resultados
+
 SELECT 
     customer_key,
     COUNT(*) AS duplicate_count
